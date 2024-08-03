@@ -1,16 +1,28 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .pageContent {
-  position: relative;
-  min-height: 100vh;
+  flex: 1;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 100%;
+}
+
+.header {
+  padding: 20px 15px;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar{
@@ -84,27 +96,6 @@ p{
   margin: 25px 0;
 }
 
-.btn{
-  display: inline-block;
-  background-color: #c89c7e;
-  color: #fff;
-  padding: 8px 30px;
-  margin: 30px 0;
-  border-radius: 30px;
-  transition: background 0.5s;
-}
-
-.btn:hover{
-  background: rgb(151, 108, 94);
-}
-
-.header{
-  background: radial-gradient(#fff, #ffd6d6);
-}
-
-.header .row{
-  margin-top: 70px;
-}
 
 /* Social medias icons */
 
@@ -227,13 +218,15 @@ p{
 
 /* Footer */
 
-.footer{
+/* Footer */
+.footer {
   background: #fff;
   color: #8a8a8a;
   font-size: 14px;
   padding: 30px 0 20px;
   width: 100%;
   bottom: 0;
+  position: fixed;
 }
 
 .container{
