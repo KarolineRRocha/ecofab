@@ -33,17 +33,14 @@ nav{
   text-align: center;
 }
 
-nav ul {
+nav ul{
   display: inline-block;
   list-style-type: none;
-  padding: 0; /* remover o padding padrão */
-  margin: 0; /* remover a margem padrão */
 }
 
-nav ul li {
+nav ul li{
   display: inline-block;
   margin-right: 5em;
-  vertical-align: middle; /* alinha verticalmente os links */
 }
 
 a{
@@ -236,6 +233,7 @@ p{
   font-size: 14px;
   padding: 30px 0 20px;
   width: 100%;
+  bottom: 0;
 }
 
 .container{
