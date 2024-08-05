@@ -39,6 +39,8 @@ function addToCart(button) {
     }
 }
 
+
+
 function changeQuantity(button, amount) {
     const quantityInput = button.parentElement.querySelector('.quantity');
     let currentQuantity = parseInt(quantityInput.value);
