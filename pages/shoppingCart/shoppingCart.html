@@ -31,14 +31,52 @@
         <a href="">
           <img src="https://i.postimg.cc/Jhj0dsCx/heart-3509.png" height="30px" width="30px">
         </a>
-        <a href="../shoppingCart/shoppingCart.html">
+        <a href="../shoppingCart/shoppingCart.html" > 
           <img src="https://i.postimg.cc/wTW6T5Y8/cart.png" height="30px" width="30px">
         </a>
         <img src="https://i.postimg.cc/jSXkrcpP/menu.png" class="menu-icon" onclick="menutoggle()">
       </div>
     </div>
   </div>
-
+  <!--Eugénio-->
+  <div id="shop"> 
+    <h1>ecofab</h1>
+      <div class="products">
+          <div class="product">
+              <h2>Produto 1</h2>
+              <p>Preço: €10.00</p>
+              <label for="size1">Tamanho:</label>
+              <select id="size1" class="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+              </select>
+              <label for="quantity1">Quantidade:</label>
+              <input type="number" id="quantity1" class="quantity" value="1" min="1">
+              <button class="add-to-cart" data-name="Produto 1" data-price="10.00">Adicionar ao Carrinho</button>
+          </div>
+          <div class="product">
+              <h2>Produto 2</h2>
+              <p>Preço: €15.00</p>
+              <label for="size2">Tamanho:</label>
+              <select id="size2" class="size">
+                  <option value="S">S</option>
+                  <option value="M">M</option>
+                  <option value="L">L</option>
+              </select>
+              <label for="quantity2">Quantidade:</label>
+              <input type="number" id="quantity2" class="quantity" value="1" min="1">
+              <button class="add-to-cart" data-name="Produto 2" data-price="15.00">Adicionar ao Carrinho</button>
+          </div>
+          <!-- Adicione mais produtos conforme necessário -->
+      </div>
+      <h2>Carrinho de Compras</h2>
+      <div class="cart">
+          <ul class="cart-items"></ul>
+          <p>Total: €<span class="cart-total">0.00</span></p>
+      </div>
+  </div>
+    <!--Terminei aqui-->
   <!-- Footer -->
   <div class="footer">
     <div class="container">
