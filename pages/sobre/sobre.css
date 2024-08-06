@@ -17,6 +17,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+html, body {
+  overflow-x: hidden !important;
+}
+
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;

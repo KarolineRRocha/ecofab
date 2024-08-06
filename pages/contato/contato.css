@@ -17,19 +17,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body, html {
+  overflow-x: hidden !important;
+}
+
 /* Contact Form */
 .pageContent {
   display: flex;
   align-items: center;
   /* Centralizar verticalmente */
   position: relative;
-  padding: 10em;
   min-height: 115vh;
 }
 
 .contactUS {
   position: relative;
   width: 100%;
+  padding: 1em 6em;
 }
 
 .form {
@@ -54,12 +58,15 @@ body {
   position: relative;
   display: grid;
   grid-template: 2fr 1fr;
-  grid-template-rows: 10fr 4fr;
+  grid-template-rows: 7fr 4fr;
   grid-template-areas: "form info" "form map";
   grid-gap: 15px;
   margin-top: -8em;
 }
 
+#contactForm {
+  background-color: rgb(169, 184, 170, 0.1);
+}
 
 .contact h3 {
   text-align: right;
@@ -167,7 +174,6 @@ body {
 }
 
 @-webkit-keyframes bounce {
-
   0%,
   20%,
   53%,
@@ -201,7 +207,6 @@ body {
 }
 
 @keyframes bounce {
-
   0%,
   20%,
   53%,
@@ -238,8 +243,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  width: 100%;
-  text-align: center;
 }
 
 .info .infobox div span {
@@ -296,12 +299,9 @@ body {
 }
 
 @media (max-width: 991px) {
-  .pageContent {
-    margin-top: 10em;
-  }
-
   .contactUS {
-    padding: 20px;
+    position: relative;
+    padding: 10em 0;
   }
 
   .contactUS .title h2 {
@@ -334,10 +334,6 @@ body {
     width: 100%;
   }
 
-  .contact {
-    padding: 30px;
-  }
-
   .map {
     padding: 30px;
     min-height: 300px;
@@ -345,9 +341,9 @@ body {
 }
 
 /* Estilos para telas menores */
-@media (max-width: 1500px) {
+@media (max-width: 1500px) and (min-width: 990px) {
   .pageContent {
-    padding: 10em 5em 10em 5em;
+    padding: 12em 5em 10em 5em;
     min-height: 140vh !important;
   }
 
