@@ -24,8 +24,6 @@ body {
   /* Centralizar verticalmente */
   position: relative;
   min-height: 115vh;
-  background: rgb(87, 91, 79);
-  background: linear-gradient(90deg, rgba(87, 91, 79, 1) 0%, rgba(79, 97, 81, 1) 52%, rgba(169, 184, 170, 1) 100%);
 }
 
 .contactUS {
@@ -60,6 +58,10 @@ body {
   grid-template-areas: "form info" "form map";
   grid-gap: 15px;
   margin-top: -8em;
+}
+
+#contactForm {
+  background-color: rgb(169, 184, 170, 0.1);
 }
 
 .contact h3 {
