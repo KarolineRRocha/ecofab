@@ -45,10 +45,8 @@ nav {
 nav ul {
   display: inline-block;
   list-style-type: none;
-  padding: 0;
-  /* remover o padding padrão */
-  margin: 0;
-  /* remover a margem padrão */
+  padding: 0; /* remover o padding padrão */
+  margin: 0; /* remover a margem padrão */
 }
 
 nav ul li {
@@ -541,62 +539,60 @@ footer {
   }
 }
 
-
+h1 {
+    text-align: center ;
+}
+ 
 .confirmation-message {
   display: none;
   color: green;
 
 }
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
 
-h1 {
-  text-align: center;
+.container {
+padding: 1rem;
 }
 
 
-.card {
-  max-width: 300px;
-  margin: auto;
-
+.card-img-top {
+width: 100%;
+height: 5%;
 }
 
-.custom-img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
+.confirmation-message {
+display: none;
+color: green;
+font-weight: bold;
+text-align: center;
 }
 
-.sizes-options {
-  margin-bottom: 3px;
-  margin-top: 3px;
+.d-flex {
+display: flex;
+justify-content: center;
+}
+
+.btn.size-option {
+margin: 0.2rem;
+}
+
+.quantity-controls {
+display: flex;
+justify-content: left;
+align-items: center;
 }
 
 .quantity-controls input {
-  width: 35px;
-  text-align: center;
-  margin-bottom: 3px;
-  margin-top: 3px;
+width: 3rem;
+text-align: center;
 }
 
-
-
-.btn-secondary {
-  margin-bottom: 3px;
-  margin-top: 3px;
-  width: 35px;
-
-
-}
-
-
-.d-flex {
-
-  justify-content: left;
-
-}
-
-.card-text {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  align-items: left;
-}
+/* Espaçamento automático entre as colunas */
+.row.g-3 {
+--bs-gutter-x: 1rem;
+/* Espaço entre as colunas */

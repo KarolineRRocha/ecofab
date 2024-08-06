@@ -11,12 +11,12 @@ function menutoggle(){
 }
 
 
-
 function selectSize(button) {
     var buttons = document.querySelectorAll('.sizes-options .btn');
     buttons.forEach(btn => btn.classList.remove('btn-primary'));
     button.classList.add('btn-primary');
 }
+
 
 function addToCart(button) {
     const cardBody = button.closest('.card-body');

@@ -545,57 +545,54 @@ footer {
   color: green;
 
 }
-body {
-margin: 0;
-padding: 0;
-width: 100%;
-height: 100%;
+
+h1 {
+  text-align: center ;
 }
 
-.container {
-padding: 1rem;
-}
 
 .card {
-margin-bottom: 1rem;
-border: 1px solid #ddd;
-/* Opcional: borda para visibilidade */
+  max-width: 300px; 
+  margin: auto; 
+  
 }
 
-.card-img-top {
-width: 100%;
-height: auto;
+.custom-img {
+  width: 100%; 
+  height : auto; 
+  max-height : 150px; 
+  object-fit : cover; 
 }
-
-.confirmation-message {
-display: none;
-color: green;
-font-weight: bold;
-text-align: center;
-}
-
-.d-flex {
-display: flex;
-justify-content: center;
-}
-
-.btn.size-option {
-margin: 0.2rem;
-}
-
-.quantity-controls {
-display: flex;
-justify-content: left;
-align-items: center;
+.sizes-options {
+  margin-bottom: 3px; 
+  margin-top: 3px;
 }
 
 .quantity-controls input {
-width: 3rem;
-text-align: center;
+  width: 35px;
+  text-align: center;
+  margin-bottom: 3px; 
+  margin-top: 3px;
+}
+ 
+  
+
+.btn-secondary {
+  margin-bottom: 3px; 
+  margin-top: 3px;
+  width: 35px ;
+  
+
 }
 
-/* Espaçamento automático entre as colunas */
-.row.g-3 {
---bs-gutter-x: 1rem;
-/* Espaço entre as colunas */
+
+.d-flex {
+ 
+  justify-content: left;
+ 
+  }
+.card-text{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  align-items: left;
 }
