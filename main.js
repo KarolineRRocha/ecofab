@@ -1,3 +1,4 @@
+// Modal function
 const openModal = document.querySelector(".open-modal");
 const modal = document.querySelector("#modal");
 const btnCloseModal = document.querySelector(".circle");

@@ -1,5 +1,5 @@
 // scripts.js
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const cart = [];
     const cartItemsContainer = document.querySelector('.cart-items');
     const cartTotal = document.querySelector('.cart-total');
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     let cartCount = 0;
 
     // Selecionar o botão "Add to Cart"
@@ -54,11 +54,24 @@ document.addEventListener('DOMContentLoaded', function() {
     const cartCountElement = document.getElementById('cart-count');
 
     addToCartButtons.forEach(button => {
-      button.addEventListener('click', function() {
-        // Incrementar o contador do carrinho
-        cartCount++;
-        // Atualizar o número exibido no ícone do carrinho
-        cartCountElement.textContent = cartCount;
-      });
+        button.addEventListener('click', function () {
+            // Incrementar o contador do carrinho
+            cartCount++;
+            // Atualizar o número exibido no ícone do carrinho
+            cartCountElement.textContent = cartCount;
+        });
     });
-  });
+});
+
+// Modal function
+const openModal = document.querySelector(".open-modal");
+const modal = document.querySelector("#modal");
+const btnCloseModal = document.querySelector(".circle");
+
+openModal.addEventListener("click", () => {
+    modal.classList.toggle("active");
+});
+
+btnCloseModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+});
