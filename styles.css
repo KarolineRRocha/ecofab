@@ -19,10 +19,15 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+body,
+html {
+  overflow-x: hidden !important;
+}
+
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;
-  width: 30%;
+  width: 50%;
 }
 
 li {
@@ -183,13 +188,16 @@ input::placeholder {
   form {
     padding: 20px 6px 20px 6px;
   }
+
   input {
     height: 42px;
   }
+
   button {
     height: 37px;
     font-size: 18px;
   }
+
   .annotation {
     font-size: 12px;
   }
@@ -320,7 +328,7 @@ p {
 }
 
 .categories {
-  margin: 70px 0;
+  text-align: center;
 
   .col {
     flex-basis: 50%;
@@ -330,7 +338,7 @@ p {
   }
 
   .col img {
-    width: 100%;
+    width: 90%;
   }
 }
 
@@ -612,3 +620,40 @@ footer {
   }
 }
 
+/* Navbar icons and banner goals */
+@media (max-width: 991px) {
+  .navbar-brand {
+    margin-left: 2em;
+    width: 30%;
+  }
+
+  #logo1 img {
+    height: 1.5em;
+    margin-right: -5em !important;
+  }
+
+  #logo2 img {
+    height: 1.5em;
+  }
+
+  .carousel, .carousel-inner, .carousel-item {
+    height: 30vh;
+}
+
+.carousel-item img {
+  height: 33vh;
+}
+
+  .categories {
+    text-align: center;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    .col img {
+      width: 100%;
+    }
+  }
+}
