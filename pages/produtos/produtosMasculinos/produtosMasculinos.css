@@ -17,11 +17,12 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.pageContent {
-  position: relative;
-  min-height: 100vh;
+body,
+html {
+  overflow-x: hidden !important;
 }
 
+<<<<<<< HEAD
 body,
 html {
   overflow-x: hidden !important;
@@ -31,6 +32,12 @@ html {
 .navbar-brand {
   margin-left: 2em;
   width: 35%;
+=======
+/* Navbar */
+.navbar-brand {
+  margin-left: 2em;
+  width: 50%;
+>>>>>>> f4e359836abc5b09e7245d5095e14d0757c0ae73
 }
 
 li {
@@ -39,7 +46,11 @@ li {
 }
 
 #contato {
+<<<<<<< HEAD
   margin-right: 30em;
+=======
+  margin-right: 16em;
+>>>>>>> f4e359836abc5b09e7245d5095e14d0757c0ae73
 }
 
 #logo1 img {
@@ -192,7 +203,11 @@ form {
     padding: 20px 6px 20px 6px;
   }
 
+<<<<<<< HEAD
   input {
+=======
+  .inputModal {
+>>>>>>> f4e359836abc5b09e7245d5095e14d0757c0ae73
     height: 42px;
   }
 
