@@ -25,7 +25,7 @@ html {
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;
-  width: 30%;
+  width: 35%;
 }
 
 li {
@@ -34,7 +34,7 @@ li {
 }
 
 #contato {
-  margin-right: 16em;
+  margin-right: 30em;
 }
 
 #logo1 img {
@@ -707,5 +707,39 @@ footer {
   #footer_content {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
+  }
+}
+
+/* Navbar icons and banner goals */
+@media (max-width: 991px) {
+  .navbar-brand {
+    width: 30%;
+  }
+
+  #contato {
+    margin-right: 16em;
+  }
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 30vh;
+  }
+
+  .carousel-item img {
+    height: 33vh;
+  }
+
+  .categories {
+    text-align: center;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    .col img {
+      width: 100%;
+    }
   }
 }
