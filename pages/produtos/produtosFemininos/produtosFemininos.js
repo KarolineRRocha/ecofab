@@ -15,6 +15,7 @@ function selectSize(button) {
     button.classList.add('btn-primary');
 }
 
+
 function addToCart(button) {
     const cardBody = button.closest('.card-body');
     const sizeSelected = cardBody.querySelector('.btn-primary');
