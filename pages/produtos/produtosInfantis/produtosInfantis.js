@@ -1,16 +1,13 @@
-
 var MenuItems = document.getElementById("MenuItems");
 MenuItems.style.maxHeight = "0px";
-function menutoggle(){
-    if(MenuItems.style.maxHeight == "0px"){
-        MenuItems.style.maxHeight= "200px";
+function menutoggle() {
+    if (MenuItems.style.maxHeight == "0px") {
+        MenuItems.style.maxHeight = "200px";
     }
-    else{
-        MenuItems.style.maxHeight= "0px";
+    else {
+        MenuItems.style.maxHeight = "0px";
     }
 }
-
-
 
 function selectSize(button) {
     var buttons = document.querySelectorAll('.sizes-options .btn');
@@ -48,3 +45,16 @@ function changeQuantity(button, amount) {
     }
     quantityInput.value = currentQuantity;
 }
+
+// Modal function
+const openModal = document.querySelector(".open-modal");
+const modal = document.querySelector("#modal");
+const btnCloseModal = document.querySelector(".circle");
+
+openModal.addEventListener("click", () => {
+    modal.classList.toggle("active");
+});
+
+btnCloseModal.addEventListener("click", () => {
+    modal.classList.remove("active");
+});

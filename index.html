@@ -13,292 +13,322 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
 </head>
 
 <body>
-  <div class="pageContent">
-    <div class="header">
-      <div class="navbar">
-        <div class="logo">
-          <a href="index.html"><img src="https://i.postimg.cc/C16J1hm3/ecofab-logo.png" width="90px"></a>
-        </div>
-        <nav>
-          <ul id="MenuItems">
-            <li><a href="">Produtos</a></li>
-            <li><a href="">Novidades</a></li>
-            <li><a href="pages/sobre/sobre.html">Sobre</a></li>
-            <li><a href="pages/contato/contato.html">Contato</a></li>
-          </ul>
-        </nav>
-        <a href="pages/login/login.html">
-          <img src="https://i.postimg.cc/0NJnXRnx/person.png" height="30px" width="30px">
-        </a>
-        <a href="">
-          <img src="https://i.postimg.cc/Jhj0dsCx/heart-3509.png" height="30px" width="30px">
-        </a>
-        <a href="pages/shoppingCart/shoppingCart.html">
-          <img src="https://i.postimg.cc/wTW6T5Y8/cart.png" height="30px" width="30px">
-        </a>
-        <img src="https://i.postimg.cc/jSXkrcpP/menu.png" class="menu-icon" onclick="menutoggle()">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="assets/ecofab_logo.png" alt="eofabLogo" width="100px"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Ecofab</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Produtos </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="pages/produtos/produtosFemininos/produtosFemininos.html">Femininio</a></li>
+              <li><a class="dropdown-item" href="pages/produtos/produtosMasculinos/produtosMasculinos.html">Masculino</a></li>
+              <li><a class="dropdown-item" href="pages/produtos/produtosInfantis/produtosInfantis.html">Infantil</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/sobre/sobre.html">Sobre</a>
+          </li>
+          <li class="nav-item" id="contato">
+            <a class="nav-link" href="pages/contato/contato.html">Contato</a>
+          </li>
+          <li class="nav-item">
+            <a class="open-modal" id="logo1">
+              <img src="https://i.postimg.cc/0NJnXRnx/person.png" alt="login">
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/shoppingCart/shoppingCart.html" id="logo2">
+              <img src="https://i.postimg.cc/wTW6T5Y8/cart.png" alt="shoppingCart">
+            </a>
+          </li>
+        </ul>
       </div>
+    </div>
+  </nav>
 
-      <!-- Carrossel -->
-      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <!-- Login modal -->
+  <div id="modal">
+    <div class="modal-hero">
+      <h3>Login</h3>
+      <div class="circle">
+        <div class="line"></div>
+      </div>
+    </div>
+    <form action="#">
+      <input class="input-email" type="text" placeholder="E-mail" />
+      <input type="password" placeholder="Password" />
+      <a href="#" class="annotation">Forgot your password</a>
+      <button type="submit" id="loginText">Login</button>
+    </form>
+    <div class="modal-footer">
+      <a href="#" class="annotation">Already have an account ? Sign up</a>
+    </div>
+  </div>
+
+  <div class="header">
+    <!-- Carrossel -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/1.png" class="img-fluid d-block w-100" alt="img1">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/2.png" class="img-fluid d-block w-100" alt="img2">
+        </div>
+        <div class="carousel-item">
+          <img src="assets/3.png" class="img-fluid d-block w-100" alt="img3">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Featured Categories -->
+  <div class="categories">
+    <div class="row">
+      <div class="col">
+        <img src="assets/bannerGoals.png">
+      </div>
+    </div>
+  </div>
+
+  <!-- Podutos em destaque -->
+  <div class="small-container">
+    <h2 class="title">Produtos em destaque</h2>
+    <div class="row">
+      <div class="col-4">
+        <img src="https://i.postimg.cc/5t7SNRNd/product-1.jpg">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="https://i.postimg.cc/J0WD1NJC/product-2.jpg">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="https://i.postimg.cc/NjV0s8qC/product-3.jpg">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+      <div class="col-4">
+        <img src="https://i.postimg.cc/Sx9B9cYv/product-4.jpg">
+        <h4>Red Printed T-Shirt</h4>
+        <div class="rating">
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+        <p>$50.00</p>
+      </div>
+    </div>
+
+    <!-- Produtos em sale -->
+    <h2 class="title">Pordutos em oferta</h2>
+    <div class="corouselBody">
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="assets/1.png" class="img-fluid d-block w-100" alt="img1">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/2.png" class="img-fluid d-block w-100" alt="img2">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="carousel-item">
-            <img src="assets/3.png" class="img-fluid d-block w-100" alt="img3">
+            <div class="cards-wrapper">
+              <div class="card">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card d-none d-md-block">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
     </div>
+  </div>
 
-    <!-- Featured Categories -->
-    <div class="categories">
-      <div>
-        <div class="row">
-          <div class="col">
-            <img src="assets/bannerBird.png">
-          </div>
-          <div class="col">
-            <img src="assets/bannerBird.png">
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Featured Products -->
+  <!-- Offer -->
+  <div class="offer">
     <div class="small-container">
-      <h2 class="title">Produtos em destaque</h2>
       <div class="row">
-        <div class="col-4">
-          <img src="https://i.postimg.cc/5t7SNRNd/product-1.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
+        <div class="col-2">
+          <img src="https://i.postimg.cc/5NNGdjJF/exclusive.png" class="offer-img">
         </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/J0WD1NJC/product-2.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/NjV0s8qC/product-3.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/Sx9B9cYv/product-4.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <h2 class="title">Pordutos em oferta</h2>
-      <div class="row">
-        <div class="col-4">
-          <img src="https://i.postimg.cc/RV6yrwdZ/product-5.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/x1VsWhq6/product-6.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/yxBmf4LR/product-7.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/Yq0GtCL9/product-8.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-4">
-          <img src="https://i.postimg.cc/xC98hfS9/product-9.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/MpkWg6yg/product-10.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/XNRq6kW2/product-11.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-o"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-        <div class="col-4">
-          <img src="https://i.postimg.cc/XNCNLB59/product-12.jpg">
-          <h4>Red Printed T-Shirt</h4>
-          <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-o"></i>
-          </div>
-          <p>$50.00</p>
-        </div>
-      </div>
-    </div>
-    <!-- Offer -->
-    <div class="offer">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-2">
-            <img src="https://i.postimg.cc/5NNGdjJF/exclusive.png" class="offer-img">
-          </div>
-          <div class="col-2">
-            <p>Exclusively available on Snug Clothing</p>
-            <h1> Smart Band 4</h1>
-            <small>The MI Smart Band 4 features a 39.9% larger (than MI Band 3) AMOLED colorful touch display with adjustable brightness, so everything is clear as can be.</small><br>
-            <a href="" class="btn">Buy Now! &#8594;</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial -->
-    <div class="testimonial">
-      <div class="small-container">
-        <div class="row">
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="https://i.postimg.cc/cHhmXMrk/user-1.png">
-            <h3> Sean Parker</h3>
-          </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="https://i.postimg.cc/YSffCff2/user-2.png">
-            <h3> Mike Smith </h3>
-          </div>
-          <div class="col-3">
-            <i class="fa fa-quote-left"></i>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
-            <div class="rating">
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star"></i>
-              <i class="fa fa-star-half-o"></i>
-              <i class="fa fa-star-o"></i>
-            </div>
-            <img src="https://i.postimg.cc/5NCztSfc/user-3.png">
-            <h3> Blake Joe</h3>
-          </div>
+        <div class="col-2">
+          <p>Exclusively available on Snug Clothing</p>
+          <h1> Smart Band 4</h1>
+          <small>The MI Smart Band 4 features a 39.9% larger (than MI Band 3) AMOLED colorful touch display with adjustable brightness, so everything is clear as can be.</small><br>
+          <a href="" class="btn">Buy Now! &#8594;</a>
         </div>
       </div>
     </div>
   </div>
+
+  <!-- Testimonial -->
+  <div class="testimonial">
+    <div class="small-container">
+      <div class="row">
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="https://i.postimg.cc/cHhmXMrk/user-1.png">
+          <h3> Sean Parker</h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="https://i.postimg.cc/YSffCff2/user-2.png">
+          <h3> Mike Smith </h3>
+        </div>
+        <div class="col-3">
+          <i class="fa fa-quote-left"></i>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima aperiam iste, ipsa perferendis, expedita voluptatibus aliquid asperiores mollitia aut.</p>
+          <div class="rating">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-o"></i>
+            <i class="fa fa-star-o"></i>
+          </div>
+          <img src="https://i.postimg.cc/5NCztSfc/user-3.png">
+          <h3> Blake Joe</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!--Responsive Footer-->
   <footer>
@@ -369,6 +399,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 </body>
 
 </html>

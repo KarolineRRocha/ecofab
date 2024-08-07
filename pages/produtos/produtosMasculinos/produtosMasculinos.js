@@ -1,4 +1,3 @@
-
 var MenuItems = document.getElementById("MenuItems");
 MenuItems.style.maxHeight = "0px";
 function menutoggle(){
@@ -9,7 +8,6 @@ function menutoggle(){
         MenuItems.style.maxHeight= "0px";
     }
 }
-
 
 function selectSize(button) {
     var buttons = document.querySelectorAll('.sizes-options .btn');
