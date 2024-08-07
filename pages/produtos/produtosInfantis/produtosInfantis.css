@@ -22,28 +22,36 @@ body {
   min-height: 100vh;
 }
 
-/* Navbar */
-.navbar-brand {
-  margin-left: 2em;
-  width: 30%;
+.navbar {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
 }
 
-li {
+.logo {
   margin-left: 2em;
+}
+
+.navbar img {
   margin-right: 2em;
 }
 
-#contato {
-  margin-right: 16em;
+nav {
+  flex: 1;
+  text-align: center;
 }
 
-#logo1 img {
-  height: 1.5em;
-  margin-right: -5em !important;
+nav ul {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0; /* remover o padding padrão */
+  margin: 0; /* remover a margem padrão */
 }
 
-#logo2 img {
-  height: 1.5em;
+nav ul li {
+  display: inline-block;
+  margin-right: 5em;
 }
 
 .carousel,
@@ -240,6 +248,132 @@ small {
   font-size: 16px;
 }
 
+/* Social medias icons */
+
+.medias {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: auto;
+}
+
+.nav-container {
+  padding: 0.5rem 2rem;
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(#28a745, 0.15), 0 6px 12px 0 rgba(#28a745, 0.15);
+  z-index: 1;
+  border-radius: 3rem;
+
+  .iconList {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    white-space: nowrap;
+    transition: transform 0.3s ease;
+    margin: 0;
+
+    .icons {
+      margin-right: 1em;
+      transition: all 0.3s ease;
+
+      button {
+        text-decoration: none;
+        color: #868e96;
+        transition: all 0.3s ease;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7rem;
+        background: none;
+        box-shadow: none;
+        border: none;
+        z-index: 20;
+      }
+
+      img {
+        width: 2em;
+      }
+
+      &:hover,
+      &.active {
+        background: #f4f4f4;
+        border-radius: 3rem;
+
+        button {
+          color: #28a745;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Social Media */
+.nav-container {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+}
+
+.scroll-container {
+  flex: 1;
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+
+.iconList {
+  display: flex;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.scroll-arrow {
+  text-decoration: none;
+  color: #868e96;
+  transition: all 0.3s ease;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem;
+  background: none;
+  box-shadow: none;
+  border: none;
+  z-index: 20;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  background-color: white;
+  border-radius: 3rem;
+
+  &:hover {
+    color: #28a745;
+    background: #f4f4f4;
+    cursor: pointer;
+  }
+
+  &.active {
+    display: flex;
+  }
+
+  &.left-arrow {
+    left: 0;
+  }
+
+  &.right-arrow {
+    right: 0;
+  }
+}
+
+/* Menu mobile */
+.menu-icon {
+  width: 28px;
+  margin-left: 20px;
+  display: none;
+}
+
 /* Footer */
 footer {
   letter-spacing: 1px;
@@ -405,64 +539,60 @@ footer {
   }
 }
 
-
+ 
 .confirmation-message {
   display: none;
   color: green;
 
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
+h1 {
+  text-align: center ;
 }
 
-.container {
-  padding: 1rem;
-}
 
 .card {
-  margin-bottom: 1rem;
-  border: 1px solid #ddd;
-  /* Opcional: borda para visibilidade */
+  max-width: 300px; 
+  margin: auto; 
+  
 }
 
-.card-img-top {
-  width: 100%;
-  height: auto;
+.custom-img {
+  width: 100%; 
+  height : auto; 
+  max-height : 150px; 
+  object-fit : cover; 
 }
-
-.confirmation-message {
-  display: none;
-  color: green;
-  font-weight: bold;
-  text-align: center;
-}
-
-.d-flex {
-  display: flex;
-  justify-content: center;
-}
-
-.btn.size-option {
-  margin: 0.2rem;
-}
-
-.quantity-controls {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+.sizes-options {
+  margin-bottom: 3px; 
+  margin-top: 3px;
 }
 
 .quantity-controls input {
-  width: 3rem;
+  width: 35px;
   text-align: center;
+  margin-bottom: 3px; 
+  margin-top: 3px;
+}
+ 
+  
+
+.btn-secondary {
+  margin-bottom: 3px; 
+  margin-top: 3px;
+  width: 35px ;
+  
+
 }
 
-/* Espaçamento automático entre as colunas */
-.row.g-3 {
-  --bs-gutter-x: 1rem;
-  /* Espaço entre as colunas */
+
+.d-flex {
+ 
+  justify-content: left;
+ 
+  }
+.card-text{
+  margin-top: 3px;
+  margin-bottom: 3px;
+  align-items: left;
 }
