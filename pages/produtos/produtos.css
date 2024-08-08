@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+:root {
+  --color-neutral-0: #0e0c0c;
+  --color-neutral-10: #171717;
+  --color-neutral-30: #a8a29e;
+  --color-neutral-40: #f5f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body,
+html {
+  overflow-x: hidden !important;
+}
+
+/* Navbar */
+.navbar-brand {
+  margin-left: 2em;
+  width: 30%;
+}
+
+li {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+#contato {
+  margin-right: 16em;
+}
+
+#logo1 img {
+  height: 1.5em;
+  margin-right: -5em !important;
+}
+
+#logo2 img {
+  height: 1.5em;
+  margin-top: 0.6em;
+}
+
+/* Login Page */
+.open-modal {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  color: var(--bs-nav-link-color);
+  text-decoration: none;
+  background: 0 0;
+  border: 0;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+#modal {
+  display: none;
+  position: absolute;
+  width: 90%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.7);
+  box-shadow: 5px 7px 17px rgb(0 0 0 / 50%);
+  border-radius: 20px;
+  z-index: 999;
+  right: 0;
+  margin-right: 4em;
+}
+
+#modal.active {
+  display: block;
+}
+
+.modal-hero {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c89c7e;
+  padding: 25px 0 30px 0;
+}
+
+.modal-hero h3 {
+  color: #575b4f;
+  font-size: 25px;
+  margin-left: 2.3em;
+}
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background: rgb(200, 156, 126, 0.6);
+  border-radius: 100%;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.line {
+  width: 50%;
+  height: 2px;
+  background: #575b4f;
+  transform: rotate(45deg);
+}
+
+.line::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: #575b4f;
+  transform: rotate(-90deg);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.inputLogin {
+  background: rgb(200, 156, 126, 0.1);
+  width: 90%;
+  height: 50px;
+  box-shadow: -2px 2px 2px #c89c7e;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  border-radius: 19px;
+  padding: 15px 0 15px 15px;
+}
+
+.inputLogin::placeholder {
+  color: #575b4f;
+  font-size: 15px;
+}
+
+.input-email {
+  margin-bottom: 20px;
+}
+
+.annotation {
+  color: #575b4f;
+  padding: 20px;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+#loginText {
+  width: 90%;
+  height: 45px;
+  border: none;
+  outline: none;
+  background: #c89c7e;
+  color: #575b4f;
+  font-size: 18px;
+  position: relative;
+  overflow: hidden;
+}
+
+#loginText:hover {
+  background: #bb734f;
+}
+
+#loginText {
+  font-size: 1.2em;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid #575b4f;
+  padding: 15px;
+}
+
+/* responsive for small screen */
+@media screen and (min-width: 320px) and (max-width: 377px) {
+  form {
+    padding: 20px 6px 20px 6px;
+  }
+
+  input {
+    height: 42px;
+  }
+
+  button {
+    height: 37px;
+    font-size: 18px;
+  }
+
+  .annotation {
+    font-size: 12px;
+  }
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 93vh;
+  background-color: white;
+  object-fit: contain;
+  object-position: center;
+}
+
+/* Footer */
+footer {
+  letter-spacing: 1px;
+  /* espaçamento das letras */
+  width: 100%;
+  color: var(--color-neutral-10);
+}
+
+.footer-link {
+  text-decoration: none;
+}
+
+#footer_content {
+  display: grid;
+  /* para colocar em grelha */
+  grid-template-columns: repeat(4, 1fr);
+  /* para ficar em 4 colunas */
+  padding: 3rem 3.5rem;
+  /* espaçamento */
+  text-align: center;
+  /* Centraliza o conteúdo de texto */
+}
+
+#footer_contacts h1 {
+  margin-bottom: 0.75rem;
+}
+
+#logotipo {
+  height: 4rem;
+  width: 6rem;
+}
+
+#footer_social_media {
+  display: flex;
+  gap: 2rem;
+  /* espaçamento entre os elementos */
+  margin-top: 1.5rem;
+  justify-content: center;
+  /* Centraliza os ícones horizontalmente */
+
+  a {
+    color: #fff !important;
+  }
+}
+
+#footer_social_media .footer-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* os 3 a cima para centralizar o elemento */
+  height: 2.5rem;
+  width: 2.5rem;
+  color: var(--color-neutral-40);
+  /* define a cor do elemento */
+  border-radius: 50%;
+  /* coloca borda nos elementos */
+  transition: all 0.4s;
+  /* tempo da opacidade */
+}
+
+#footer_social_media .footer-link i {
+  font-size: 1.25rem;
+  /* aumenta o tamanho do icone */
+}
+
+#footer_social_media .footer-link:hover {
+  opacity: 0.8;
+  /* fica "escuro" quando passa o mouse */
+}
+
+#instagram {
+  background: linear-gradient(#7f37c9, #ff2992, #ff9807);
+}
+
+#facebook {
+  background-color: #4267b3;
+}
+
+#whatsapp {
+  background-color: #25d366;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  /* coloca novamente como colunas */
+  gap: 0.75rem;
+  /* espaçamento */
+  list-style: none;
+  /*remove as bolinhas*/
+}
+
+.footer-list .footer-link {
+  color: var(--color-neutral-0);
+  transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+  color: var(--color-neutral-30);
+}
+
+#footer_subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#footer_subscribe p {
+  color: black;
+}
+
+#input_group {
+  display: flex;
+  align-items: center;
+  background-color: var(--color-neutral-30);
+  border-radius: 4px;
+}
+
+#input_group input {
+  all: unset;
+  /*tira a costomização padrão*/
+  padding: 0.75rem;
+  width: 100%;
+}
+
+#input_group button {
+  background-color: var(--color-neutral-0);
+  border: none;
+  color: var(--color-neutral-40);
+  padding: 0px 1.25rem;
+  font-size: 1.125rem;
+  height: 100%;
+  border-radius: 0px 4px 4px 0px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+#input_group button:hover {
+  opacity: 0.8;
+}
+
+#footer_copyright {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  font-size: 0.9rem;
+  padding: 1.5rem;
+  font-weight: 100;
+}
+
+/*Para deixar responsivo*/
+@media screen and (max-width: 768px) {
+  #footer_content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  #footer_content {
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
+  }
+}
+
+ 
+.confirmation-message {
+  display: none;
+  color: green;
+
+}
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
+}
+
+.container {
+padding: 1rem;
+}
+
+.card {
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+/* Opcional: borda para visibilidade */
+}
+
+.card-img-top {
+width: 100%;
+height: auto;
+}
+
+.confirmation-message {
+display: none;
+color: green;
+font-weight: bold;
+text-align: center;
+}
+
+.d-flex {
+display: flex;
+justify-content: center;
+}
+
+.btn.size-option {
+margin: 0.2rem;
+}
+
+.quantity-controls {
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.quantity-controls input {
+width: 3rem;
+text-align: center;
+}
+
+/* Espaçamento automático entre as colunas */
+.row.g-3 {
+--bs-gutter-x: 1rem;
+/* Espaço entre as colunas */
+}
+
+/* Alterar a cor do texto da tab selecionada */
+.tabs-produtos button[aria-selected="true"]{
+  color: #555555 !important;
+}
+
+/* Alterar a cor do texto da tab não selecionada */
+.tabs-produtos button[aria-selected="false"]{
+  color: #555555 !important;
+}
+
+.cart-list {
+  list-style: none;
+}
+.cart-list ul {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
+}
+
+.card {
+  --bs-card-spacer-y: 0 !important;
+}
+
+.row #cart-items-product-name{
+  --bs-gutter-x: 0 !important;
+}
+
+.card #cart-items-product-name {
+  --bs-card-spacer-x: 0 !important;
+}
+
+.row-no-gutters{
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+}
