@@ -27,7 +27,7 @@ html {
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;
-  width: 35%;
+  width: 30%;
 }
 
 li {
@@ -36,7 +36,7 @@ li {
 }
 
 #contato {
-  margin-right: 30em;
+  margin-right: 16em;
 }
 
 #logo1 img {
