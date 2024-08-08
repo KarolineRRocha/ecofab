@@ -25,7 +25,7 @@ html {
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;
-  width: 35%;
+  width: 30%;
 }
 
 li {
@@ -34,7 +34,7 @@ li {
 }
 
 #contato {
-  margin-right: 30em;
+  margin-right: 16em;
 }
 
 #logo1 img {
@@ -125,7 +125,7 @@ form {
   padding: 30px;
 }
 
-.inputModal {
+input {
   background: rgb(200, 156, 126, 0.1);
   width: 90%;
   height: 50px;
@@ -137,7 +137,7 @@ form {
   padding: 15px 0 15px 15px;
 }
 
-.inputModal::placeholder {
+input::placeholder {
   color: #575b4f;
   font-size: 15px;
 }
@@ -187,7 +187,7 @@ form {
     padding: 20px 6px 20px 6px;
   }
 
-  .inputModal {
+  input {
     height: 42px;
   }
 
@@ -199,34 +199,6 @@ form {
   .annotation {
     font-size: 12px;
   }
-}
-
-.carousel,
-.carousel-inner,
-.carousel-item {
-  height: 100vh;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 93vh;
-  background-color:
-    object-fit contain;
-  object-position: center;
-}
-
-.carousel,
-.carousel-inner,
-.carousel-item {
-  height: 100vh;
-}
-
-.carousel-item img {
-  width: 100%;
-  height: 93vh;
-  background-color:
-    object-fit contain;
-  object-position: center;
 }
 
 /* Footer */
@@ -394,51 +366,63 @@ footer {
   }
 }
 
+ 
 .confirmation-message {
   display: none;
   color: green;
+
+}
+body {
+margin: 0;
+padding: 0;
+width: 100%;
+height: 100%;
 }
 
-h1 {
-  text-align: center;
+.container {
+padding: 1rem;
 }
 
 .card {
-  max-width: 300px;
-  margin: auto;
+margin-bottom: 1rem;
+border: 1px solid #ddd;
+/* Opcional: borda para visibilidade */
 }
 
-.custom-img {
-  width: 100%;
-  height: auto;
-  max-height: 150px;
-  object-fit: cover;
+.card-img-top {
+width: 100%;
+height: auto;
 }
 
-.sizes-options {
-  margin-bottom: 3px;
-  margin-top: 3px;
-}
-
-.quantity-controls input {
-  width: 35px;
-  text-align: center;
-  margin-bottom: 3px;
-  margin-top: 3px;
-}
-
-.btn-secondary {
-  margin-bottom: 3px;
-  margin-top: 3px;
-  width: 35px;
+.confirmation-message {
+display: none;
+color: green;
+font-weight: bold;
+text-align: center;
 }
 
 .d-flex {
-  justify-content: left;
+display: flex;
+justify-content: center;
 }
 
-.card-text {
-  margin-top: 3px;
-  margin-bottom: 3px;
-  align-items: left;
+.btn.size-option {
+margin: 0.2rem;
+}
+
+.quantity-controls {
+display: flex;
+justify-content: left;
+align-items: center;
+}
+
+.quantity-controls input {
+width: 3rem;
+text-align: center;
+}
+
+/* Espaçamento automático entre as colunas */
+.row.g-3 {
+--bs-gutter-x: 1rem;
+/* Espaço entre as colunas */
 }
