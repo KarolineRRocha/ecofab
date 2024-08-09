@@ -22,6 +22,18 @@ html {
   overflow-x: hidden !important;
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+a {
+  text-decoration: none !important;
+  color: #575b4f !important;
+}
+
+p {
+  color: #575b4f;
+}
+
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 /* Navbar */
 .navbar-brand {
   margin-left: 2em;
@@ -44,6 +56,10 @@ li {
 
 #logo2 img {
   height: 1.5em;
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+  margin-top: 0.6em;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 /* Login Page */
@@ -125,7 +141,11 @@ form {
   padding: 30px;
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
 input {
+=======
+.inputLogin {
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   background: rgb(200, 156, 126, 0.1);
   width: 90%;
   height: 50px;
@@ -137,7 +157,11 @@ input {
   padding: 15px 0 15px 15px;
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
 input::placeholder {
+=======
+.inputLogin::placeholder {
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   color: #575b4f;
   font-size: 15px;
 }
@@ -201,6 +225,23 @@ input::placeholder {
   }
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+.carousel,
+.carousel-inner,
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 93vh;
+  background-color: white;
+  object-fit: contain;
+  object-position: center;
+}
+
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 /* Footer */
 footer {
   letter-spacing: 1px;
@@ -209,6 +250,14 @@ footer {
   color: var(--color-neutral-10);
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 .footer-link {
   text-decoration: none;
 }
@@ -218,7 +267,11 @@ footer {
   /* para colocar em grelha */
   grid-template-columns: repeat(4, 1fr);
   /* para ficar em 4 colunas */
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   padding: 3rem 3.5rem;
+=======
+  padding: 3rem 3rem;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   /* espaçamento */
   text-align: center;
   /* Centraliza o conteúdo de texto */
@@ -229,8 +282,13 @@ footer {
 }
 
 #logotipo {
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   height: 4rem;
   width: 6rem;
+=======
+  height: 4.5rem;
+  width: 8rem;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 #footer_social_media {
@@ -293,29 +351,74 @@ footer {
   /*remove as bolinhas*/
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
 .footer-list .footer-link {
   color: var(--color-neutral-0);
+=======
+.footer-list {
+
+  h4 {
+    color: #bb734f;
+  }
+}
+
+#footer_subscribe {
+
+  color: #575b4f;
+
+  h4 {
+    color: #bb734f;
+  }
+}
+
+.footer-list .footer-link {
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   transition: all 0.4s;
 }
 
 .footer-list .footer-link:hover {
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   color: var(--color-neutral-30);
+=======
+  color: #bb734f;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 #footer_subscribe {
   display: flex;
   flex-direction: column;
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   gap: 1.5rem;
 }
 
 #footer_subscribe p {
   color: black;
+=======
+  gap: 1.1rem;
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  width: 80%;
+  /* Reduzindo a largura em 10% */
+}
+
+#footer_subscribe p {
+  color: #575b4f;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 #input_group {
   display: flex;
   align-items: center;
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   background-color: var(--color-neutral-30);
+=======
+  justify-content: center;
+  background-color: rgb(169, 184, 170, 0.2);
+  width: 90%;
+  height: 2.5em;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   border-radius: 4px;
 }
 
@@ -327,7 +430,11 @@ footer {
 }
 
 #input_group button {
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
   background-color: var(--color-neutral-0);
+=======
+  background-color: #bb734f;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
   border: none;
   color: var(--color-neutral-40);
   padding: 0px 1.25rem;
@@ -342,6 +449,16 @@ footer {
   opacity: 0.8;
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+.linha-horizontal {
+  width: 90%;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
+}
+
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 #footer_copyright {
   display: flex;
   justify-content: center;
@@ -349,6 +466,10 @@ footer {
   font-size: 0.9rem;
   padding: 1.5rem;
   font-weight: 100;
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
+=======
+  color: #575b4f;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 /*Para deixar responsivo*/
@@ -366,12 +487,51 @@ footer {
   }
 }
 
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
  
+=======
+/* Navbar icons and banner goals */
+@media (max-width: 991px) {
+  .navbar-brand {
+    width: 30%;
+  }
+
+  #contato {
+    margin-right: 16em;
+  }
+
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+    height: 30vh;
+  }
+
+  .carousel-item img {
+    height: 33vh;
+  }
+
+  .categories {
+    text-align: center;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    .col img {
+      width: 100%;
+    }
+  }
+}
+
+
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 .confirmation-message {
   display: none;
   color: green;
 
 }
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
 body {
 margin: 0;
 padding: 0;
@@ -419,10 +579,103 @@ align-items: center;
 .quantity-controls input {
 width: 3rem;
 text-align: center;
+=======
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  padding: 1rem;
+}
+
+.card {
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  /* Opcional: borda para visibilidade */
+}
+
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+
+.confirmation-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  text-align: center;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: center;
+}
+
+.btn.size-option {
+  margin: 0.2rem;
+}
+
+.quantity-controls {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.quantity-controls input {
+  width: 3rem;
+  text-align: center;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
 
 /* Espaçamento automático entre as colunas */
 .row.g-3 {
+<<<<<<< HEAD:pages/produtos/produtosFemininos/produtosFemininos.css
 --bs-gutter-x: 1rem;
 /* Espaço entre as colunas */
+=======
+  --bs-gutter-x: 1rem;
+  /* Espaço entre as colunas */
+}
+
+/* Alterar a cor do texto da tab selecionada */
+.tabs-produtos button[aria-selected="true"] {
+  color: #555555 !important;
+}
+
+/* Alterar a cor do texto da tab não selecionada */
+.tabs-produtos button[aria-selected="false"] {
+  color: #555555 !important;
+}
+
+.cart-list {
+  list-style: none;
+}
+
+.cart-list ul {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  padding-right: 10px !important;
+  margin-right: 10px !important;
+}
+
+.card {
+  --bs-card-spacer-y: 0 !important;
+}
+
+.row #cart-items-product-name {
+  --bs-gutter-x: 0 !important;
+}
+
+.card #cart-items-product-name {
+  --bs-card-spacer-x: 0 !important;
+}
+
+.row-no-gutters {
+  --bs-gutter-x: 0 !important;
+  --bs-gutter-y: 0 !important;
+>>>>>>> d2b3e569db7038e7bae36539992361c06646e8bb:pages/produtos/produtos.css
 }
