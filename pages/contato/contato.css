@@ -650,17 +650,18 @@ ul {
   /*remove as bolinhas*/
 }
 
-.footer-list{
+.footer-list {
 
-  h4{
+  h4 {
     color: #bb734f;
   }
 }
 
-#footer_subscribe{
+#footer_subscribe {
 
   color: #575b4f;
-  h4{
+
+  h4 {
     color: #bb734f;
   }
 }
@@ -677,9 +678,12 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 1.1rem;
-  justify-content: center; /* Centraliza verticalmente */
-  align-items: center; /* Centraliza horizontalmente */
-  width: 80%; /* Reduzindo a largura em 10% */
+  justify-content: center;
+  /* Centraliza verticalmente */
+  align-items: center;
+  /* Centraliza horizontalmente */
+  width: 80%;
+  /* Reduzindo a largura em 10% */
 }
 
 #footer_subscribe p {
