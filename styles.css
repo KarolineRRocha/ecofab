@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-carouselSale body,
+body,
 html {
   overflow-x: hidden !important;
 }
@@ -631,6 +631,19 @@ ul {
 }
 
 @media screen and (max-width: 426px) {
+  .categories {
+    text-align: center;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    .col img {
+      width: 100%;
+    }
+  }
+
   #footer_content {
     padding: 1rem 1rem;
   }
@@ -680,5 +693,11 @@ ul {
     .col img {
       width: 100%;
     }
+  }
+
+  #bannerHome {
+    width: 100%;
+    margin-left: 1.2em;
+    padding-bottom: 4em;
   }
 }
