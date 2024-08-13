@@ -9,12 +9,11 @@ function selectSize(button) {
 
 function addToCart(button) {
     const card = button.closest('.card');
-    const [cardName , cardPrice] =  button.value.split('/')
+    const [cardName, cardPrice] = button.value.split('/')
     const image = card.querySelector('img');
     const sizeSelected = card.querySelector('.btn-primary');
     const quantityInput = card.querySelector('.quantity');
     const confirmationMessage = card.querySelector('.confirmation-message');
-
 
     if (!sizeSelected) {
         alert('Por favor, selecione um tamanho antes de adicionar ao carrinho.');
@@ -31,7 +30,6 @@ function addToCart(button) {
     } else {
         alert('Por favor, selecione a quantidade antes de adicionar ao carrinho.');
     }
-
 }
 
 function changeQuantity(button, amount) {
@@ -60,9 +58,10 @@ function sendToModal(name, price, size, quantity, image) {
         });
     });
 }
+
 function addToCart2(name, price, size, quantity, image) {
     let existingItem
-    if(cart[0] != null){
+    if (cart[0] != null) {
         existingItem = cart.find(item => item.name === name && item.size === size);
     }
     if (existingItem) {
@@ -76,9 +75,9 @@ function addToCart2(name, price, size, quantity, image) {
             cart.push({ name, price: parseFloat(price), size, quantity, image });
         }
     }
-
     updateCartDisplay();
 }
+
 // Atualiza a exibição do carrinho
 function updateCartDisplay() {
     let cartItemsContainer = document.querySelector('.cart-list');
@@ -103,12 +102,26 @@ function updateCartDisplay() {
         span[2].textContent = item.size;
         span[3].textContent = item.quantity;
         span[1].textContent = item.price + "€";
-/*        span[4].textContent = item.quantity;*/
+        /*        span[4].textContent = item.quantity;*/
         li.appendChild(clone)
         cartItemsContainer.appendChild(li);
     });
     total = cart.slice(1, cart.length).reduce((accumulator, current) => accumulator + (current.price * current.quantity), 0);
     cartTotal.textContent = total.toFixed(2);
 }
+
 // scripts.js
-document.addEventListener('DOMContentLoaded', sendToModal)
+document.addEventListener('DOMContentLoaded', sendToModal);
+
+// Modal function
+const openModal = document.querySelector(".open-modal");
+const modal = document.querySelector("#modal");
+const btnCloseModal = document.querySelector(".circle");
+
+openModal.addEventListener("click", () => {
+  modal.classList.toggle("active");
+});
+
+btnCloseModal.addEventListener("click", () => {
+  modal.classList.remove("active");
+});
