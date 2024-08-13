@@ -350,6 +350,11 @@ h4 {
   padding-bottom: 4em;
 }
 
+#bannerGoals {
+  width: 100%;
+  margin-left: 0.7em;
+}
+
 /* Footer */
 footer {
   letter-spacing: 1px;
@@ -573,7 +578,7 @@ ul {
 
   .carousel-control-next {
     top: 50% !important;
-    right: 9% !important;
+    right: 12% !important;
   }
 
   #footer_content {
@@ -593,11 +598,7 @@ ul {
   }
 
   .small-container {
-    margin-left: 2em;
-
-    .title {
-      margin-left: 1em;
-    }
+    margin-left: 1.5em;
   }
 
   .col-4 {
@@ -626,6 +627,11 @@ ul {
   #bannerHome {
     width: 95%;
     margin-top: 6em;
+    margin-left: 0;
+  }
+
+  #bannerGoals {
+    width: 95%;
     margin-left: 0;
   }
 }
@@ -696,8 +702,11 @@ ul {
   }
 
   #bannerHome {
-    width: 100%;
-    margin-left: 1.2em;
+    width: 95%;
     padding-bottom: 4em;
+  }
+
+  #bannerGoals {
+    width: 95%;
   }
 }
