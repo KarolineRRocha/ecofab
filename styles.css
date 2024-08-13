@@ -19,7 +19,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-carouselSale body,
+body,
 html {
   overflow-x: hidden !important;
 }
@@ -350,6 +350,11 @@ h4 {
   padding-bottom: 4em;
 }
 
+#bannerGoals {
+  width: 100%;
+  margin-left: 0.7em;
+}
+
 /* Footer */
 footer {
   letter-spacing: 1px;
@@ -573,7 +578,7 @@ ul {
 
   .carousel-control-next {
     top: 50% !important;
-    right: 9% !important;
+    right: 12% !important;
   }
 
   #footer_content {
@@ -593,11 +598,7 @@ ul {
   }
 
   .small-container {
-    margin-left: 2em;
-
-    .title {
-      margin-left: 1em;
-    }
+    margin-left: 1.5em;
   }
 
   .col-4 {
@@ -628,9 +629,27 @@ ul {
     margin-top: 6em;
     margin-left: 0;
   }
+
+  #bannerGoals {
+    width: 95%;
+    margin-left: 0;
+  }
 }
 
 @media screen and (max-width: 426px) {
+  .categories {
+    text-align: center;
+
+    .row {
+      margin: 0;
+      padding: 0;
+    }
+
+    .col img {
+      width: 100%;
+    }
+  }
+
   #footer_content {
     padding: 1rem 1rem;
   }
@@ -680,5 +699,14 @@ ul {
     .col img {
       width: 100%;
     }
+  }
+
+  #bannerHome {
+    width: 95%;
+    padding-bottom: 4em;
+  }
+
+  #bannerGoals {
+    width: 95%;
   }
 }
